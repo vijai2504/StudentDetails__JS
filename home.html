@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Home</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/homeIcon.jpg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="con"><p>lore</p></div>
+    <div class="container-fluid">
+      <div class="container homeContainer">
+        <h1>Welcome Home</h1>
+        <i class="fa fa-sign-in" aria-hidden="true"></i><p id="lastTime"> Last Login Time : </p>
+        <p id="userName">Welcome </p>
+        <button type="button" id="addStudent" onclick="addStudent()" class="btn btn-success newButton">Add Students</button>
+        <form>
+          <div class="inputField" id="inputField">
+            <h1>Add Students</h1>
+            <div class="row exp">
+              <div class="col-sm-3 finInput">
+                <i class="fa fa-user-md" aria-hidden="true"></i>
+                  <input type="text" name="Sname" id="studentName" onkeyup="studentNameValidate()" placeholder="Student Name" />
+                  <label id="emptySname">* This field Can't be Empty</label>
+                  <label id="partialSname">Enter atleast 3 Characters</label>
+              </div>
+              <div class="col-sm-3 finInput">
+                <i class="fa fa-calculator" aria-hidden="true"></i>
+                  <input type="number" name="Sage" id="studentAge" onkeyup="studentAgeValidate()" placeholder="Student Age"  />
+                  <label id="emptySage">* This field Can't be Empty</label>
+                  <label id="partialSage">Enter Valid Age</label>
+                  <label id="valideAge">Enter Valid two digit Age </label>
+              </div>
+              <div class="col-sm-3 finInput">
+                <i class="fa fa-book" aria-hidden="true"></i>
+                <input type="text" name="Sdept" id="studentDept" onkeyup="studentDeptValidate()" placeholder="Department"  />
+                <label id="emptySdept">* This field Can't be Empty</label>
+                  <label id="partialSdept">Enter atleast 3 Characters</label>
+              </div>
+              <div class="col-sm-3 finInput">
+                <i class="fa fa-building-o" aria-hidden="true"></i>
+                  <input type="text" name="Scollage" id="studentClg" onkeyup="studentClgValidate()" placeholder="Collage Name" />
+                  <label id="emptySclg">* This field Can't be Empty</label>
+                  <label id="partialSclg">Enter atleast 2 Characters</label>
+              </div>
+              <div class="col-sm-12 button" id="noneNone">
+                  <button type="button" onclick="addValidate()"  class="btn add btn-outline-success"><i class="fa fa-plus-circle" aria-hidden="true"></i>  Add</button>
+                  <button type="button" onclick="finalValidate()"  class="btn btn-success"><i class="fa fa-floppy-o" aria-hidden="true"></i>  Save</button>
+              </div>
+            </div>
+          </div>
+          <div id="msg">
+            <pre></pre>
+        </div>
+        </form>
+      </div>
+    </div>
+      
+      
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Student Detail</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/studentIcon.jpg">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+      <div class="con"><p>lore</p></div>
+      <div class="container-fluid">
+        <div class="container homeContainer">
+          <h1>Students Detail</h1>
+          <div class="button" id="Sbutton">
+          <button type='button' class="btn btn-success newButton" onclick='tableFromJson()' >To View Students Detail Click Here</button>   
+          </div>
+          <p id='showData'></p>
+        </div>
+    </div>
+      
+    <!-- JavaScript -->
+    <script >
+    //<!-------Studentdetails Validation ------->
+      var studentData=JSON.parse (localStorage.getItem("studentDetails"));
+          console.log("=-=-==-====-=-",studentData);
+    
+          function tableFromJson() {
+    
+            // Extract value from table header. 
+            var col = [];
+            for (var i = 0; i < studentData.length; i++) {
+                for (var key in studentData[i]) {
+                    if (col.indexOf(key) === -1) {
+                        col.push(key);
+                    }
+                }
+            }
+    
+            // Create a table.
+            var table = document.createElement("table");
+    
+            // Create table header row using the extracted headers above.
+            var tr = table.insertRow(-1);                   // table row.
+    
+            for (var i = 0; i < col.length; i++) {
+                var th = document.createElement("th");      // table header.
+                th.innerHTML = col[i];
+                tr.appendChild(th);
+            }
+    
+            // add json data to the table as rows.
+            for (var i = 0; i < studentData.length; i++) {
+    
+                tr = table.insertRow(-1);
+    
+                for (var j = 0; j < col.length; j++) {
+                    var tabCell = tr.insertCell(-1);
+                    tabCell.innerHTML = studentData[i][col[j]];
+                }
+            }
+    
+            // Now, add the newly created table with json data, to a container.
+            var divShowData = document.getElementById('showData');
+            divShowData.innerHTML = "";
+            divShowData.appendChild(table);
+            document.getElementById('Sbutton').style="display:none;"
+          }
+    
+          //<!-------Studentdetails Validation ends ------->
+          
+          </script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

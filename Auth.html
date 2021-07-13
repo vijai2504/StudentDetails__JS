@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Authentication</title>
+    <link rel="shortcut icon" type="image/jpg" href="assets/images/authentication.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body>
+    <div class="container-fluid ">
+      <div class="container">
+        <div class="row signin">
+          <div class="col-sm-4 signInLeft">
+            <i class="fa fa-binoculars" aria-hidden="true"></i><span class="myname">vijai</span>
+            <div class="leftContent">
+              <h1>Welcome Back!</h1>
+              <p>To keep in connected with us please </p>
+              <p style="padding: 0 42px;">login with your personal info</p>
+              <button type="button" id="signInLeft" onclick="SignInLeftValidate()" class="btn btn-outline-success siButton">Sign In</button>
+              <button type="button" style="display: none;" id="signUpLeft" onclick="SignUpLeftValidate()" class="btn btn-outline-success siButton">Sign Up</button>
+            </div>
+          </div>
+          <div class="col-sm-8 signInRight">
+            <h1>Create Account</h1>
+            <div id="signupForm">
+              <div>
+                <input class="con_i" onkeyup="nameValidate()" id="firstname" name="firstname" type="text" placeholder="Your Fullname " />
+                <label id="emptyName">* This field Can't be Empty</label>
+                <label id="partialName">Enter more then 3 characters</label>
+              </div>
+              <div >
+                <input class="con_i " onkeyup="emailValidate()" id="emailid" name="email" type="email" placeholder="Your Email " />
+                <label id="emptyEmail">* This field Can't be Empty</label>
+                <label id="validEmail">Enter the valid Email-id</label>
+              </div>
+              <div>
+                <input class="con_i" onkeyup="passValidate()" id="passwordfield" name="password" type="password" placeholder="Password" />
+                <label id="emptySub">* This field Can't be Empty</label>
+                <label id="partialSub">Enter more then 8 elements</label>
+              </div>
+              <div>
+                <input class="con_i" onkeyup="numberValidate()" id="phonenumber" name="number" type="number" placeholder="Your Phone " />
+                <label id="emptyNubmer">* This field Can't be Empty </label>
+                <label id="validPhone">Enter the valid Phone number</label>
+                <label id="countsMore">Enter 10 digit phone number</label>
+              </div>
+              <div id="radio">
+                <b class="bTag" onkeyup="radioValidate()" >Gender :</b>
+                <input type="radio" id="male" name="gender" value="male"  />Male
+                <input type="radio" id="female" name="gender" value="female"  />Female
+                <input type="radio" id="transgender" name="gender" value="Transgender" />Transgender
+                <label id="radioButton">* Please choose your Gender</label>
+              </div>
+              <div>
+                <textarea id="textfield" onkeyup="textValidate()" name="text" placeholder=" Your Address "></textarea>
+                <label id="emptyText">* This field Can't be Empty</label>
+                <label id="partialText">Enter more then 10 characters</label>
+              </div>
+              <div id="image">
+                <p class="pTag">Upload Your Image</p>
+                <input type="file" id="file" onchange="loadFile()" />
+                <label id="imageLabel">* Upload .jpg .png .jpeg Images only</label>
+                <label id="imageLabel1">* Your Image is Required </label>
+                <div id="imagePreview"></div>
+              </div>
+              <div class="button"> 
+                <button type="button" id="SignUpRight" onclick="SignUpRightValidate()" class="btn btn-success newButton">Sign Up</button>
+              </div>
+            </div>
+            <div id="signinForm" style="display: none;">
+              <div>
+                <input class="con_i" onkeyup="mailValidate()" id="mailid" name="mail" type="email" placeholder="Your Email " />
+                <label id="emptyEmail1">* This field Can't be Empty</label>
+                <label id="validEmail1">Enter the valid Email-id</label>
+              </div>
+              <div >
+                <input class="con_i" onkeyup="passwordValidate()" id="passfield" name="pass" type="password" placeholder="Password" />
+                <label id="emptySub1">* This field Can't be Empty</label>
+                <label id="partialSub1">Enter more then 8 elements</label>
+              </div>
+              <div class="button"> 
+                <button type="button" id="SignInRight" onclick="SignInRightValidate()" class="btn btn-success newButton">Sign In</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      
+    <!-- JavaScript -->
+    <script src="./app.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="assets/js/bootstrap.min.js" ></script>
+  </body>
+</html>

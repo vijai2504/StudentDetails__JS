@@ -1,0 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-image: url("assets/images/bg1.jpg");
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    
+}
+
+.signin {
+    width: 100%;
+    height: 85vh;
+    margin: 2% 0 0 0 !important;
+    border-radius: 10px;
+    
+}
+
+label {
+    display: none;
+    color: red;
+    font-size: 13px !important;
+    margin-left: -190px;
+}
+
+.signInLeft {
+    background:linear-gradient(#3ab691b6,#41a394be);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.signInLeft i, .myname{
+    font-size: 1.3rem;
+    color: white;
+    font-weight: 600;
+    padding: 10px 8px 170px 0;
+}
+
+.leftContent {
+    text-align: center;
+    color: white;
+}
+
+.leftContent h1 {
+    font-weight: 900;
+}
+
+.leftContent p {
+    font-size: 15px;
+    margin: 0;
+    font-weight: lighter;
+}
+
+.siButton {
+    margin: 30px 0;
+    padding: 10px 70px;
+    border-radius: 25px;
+    border: 2px solid #fff;
+    background: none;
+    color: #fff;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.siButton:hover {
+    transition: .5s;
+    border: none;
+    background: #43aa8d;
+}
+
+.newButton {
+    background: #43aa8d !important;
+    padding: 10px 70px !important;
+    border-radius: 25px !important;
+    font-weight: 800;
+}
+
+.signInRight {
+    background:linear-gradient(#e8ebeabe,#fafcfbb6);
+    text-align: center;
+    padding: 30px 0 50px 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.signInRight h1 {
+    color: #43aa8d;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+
+.signInRight i {
+    padding: 10px;
+}
+
+.signInRight i:hover {
+    color: #43aa8d;
+    font-size: 20px;
+    transition:1s;
+}
+
+.signInRight p {
+    font-size: 15px;
+}
+
+.con_i {
+    height: 50px;
+}
+
+textarea {
+    height: 90px;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.con_i, textarea {
+    width: 50%;
+    margin-bottom: 10px;
+    border-radius: 3px;
+    text-indent: 25px;
+    border: none
+}
+
+.con_i:focus, textarea:focus {
+    outline: none;
+}
+
+.button button {
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+#image img {
+    position: absolute;
+    top: 472px;
+    left: 550px;
+    width: 220px;
+}
+
+.pTag {
+    margin-left: -229px;
+    font-weight: 800;
+}
+
+.bTag {
+    margin: 0 10px 20px -50px;
+}
+
+
+/* Home Styling */
+
+.con {
+    color: #fcfdfd;
+}
+
+.homeContainer {
+    background:linear-gradient(#3ab691b6,#41a394be);
+    margin-top: 5%;
+    text-align: center;
+    padding: 2% ;
+    border-radius: 8px;
+}
+
+.homeContainer h1 {
+    padding-bottom: 15px;
+    font-weight: 900;
+    color: #ffff;
+}
+
+#lastTime{
+    display: inline;
+}  
+
+#userName {
+    padding: 20px 0;
+}
+
+.homeContainer p {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 10px 0;
+}
+
+.homeContainer i {
+    color: #ffff;
+    font-size: 25px !important;
+}
+
+.inputField h1 {
+    padding: 20px 0;
+}
+
+.add {
+    background-color: #ffff;
+    margin-right: 20px;
+}
+
+.add i{
+    color: #28A745;
+}
+
+.add i:hover {
+    color: #ffff;
+}
+
+.finInput input {
+    text-indent: 20px;
+    border-radius: 5px;
+    width: 80%;
+    height: 50px;
+    border: none;
+    background-color: #ffff;
+    margin-bottom: 10px;
+}
+
+.finInput input:focus {
+    outline: none;
+}
+
+.inputField {
+    display: none;
+}
+
+#msg {
+    display: none;
+}
+
+/* Student Details Styling */
+
+th, td, p, input, h3 {
+    font-size: 18px;
+}
+table, th, td {
+    border: solid 2px #949496;
+    border-collapse: collapse;
+    padding: 15px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+    color: white;
+    text-transform: uppercase;
+}
+table {
+  width: 80%;
+  margin-left: 10%;
+}
+
+
+/* To hide Arrows in number input field */
+/* For other browsers */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* For firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+  }
