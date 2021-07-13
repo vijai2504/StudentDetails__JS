@@ -27,6 +27,7 @@ label {
     color: red;
     font-size: 13px !important;
     margin-left: -190px;
+    text-align: center;
 }
 
 .signInLeft {

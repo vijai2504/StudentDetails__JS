@@ -287,7 +287,7 @@ function addStudent(){
     var Sname = document.getElementById('studentName').value;
     if(Sname) {
       if(Sname.length <= 3){
-        document.getElementById('partialSname').style="display:block;"
+        document.getElementById('partialSname').style="display:block;padding-left: 80%;"
         document.getElementById('studentName').style="display:inline;border:2px Solid red;"
         document.getElementById('emptySname').style="display:none;"
       } else {
@@ -296,7 +296,7 @@ function addStudent(){
       }
     }
     else {
-      document.getElementById('emptySname').style="display:block;"
+      document.getElementById('emptySname').style="display:block;padding-left: 80%;"
       document.getElementById('studentName').style="display:inline;border:2px Solid red;"
       document.getElementById('partialSname').style="display:none;"
     }
@@ -306,7 +306,7 @@ function addStudent(){
       var Sage = document.getElementById('studentAge').value;
       if(Sage) {
         if(Sage.length <= 1 ){
-          document.getElementById('partialSage').style="display:block;"
+          document.getElementById('partialSage').style="display:block;padding-left: 80%;"
           document.getElementById('emptySage').style="display:none;"
           document.getElementById('studentAge').style="display:inline;border:2px Solid red;"
         } else {
@@ -314,7 +314,7 @@ function addStudent(){
           document.getElementById('studentAge').style="display:inline;border:none;"
         }
         if(Sage.length > 2){
-          document.getElementById('valideAge').style="display:block;"
+          document.getElementById('valideAge').style="display:block;padding-left: 80%;"
           document.getElementById('studentAge').style="display:inline;border:2px Solid red;"
         }
         else {
@@ -324,7 +324,7 @@ function addStudent(){
         }
       }
       else {
-        document.getElementById('emptySage').style="display:block;"
+        document.getElementById('emptySage').style="display:block;padding-left: 80%;"
         document.getElementById('partialSage').style="display:none;"
         document.getElementById('studentAge').style="display:inline;border:2px Solid red;"
       }
@@ -334,7 +334,7 @@ function addStudent(){
     var Sdept = document.getElementById('studentDept').value;
     if(Sdept) {
       if(Sdept.length <= 1){
-        document.getElementById('partialSdept').style="display:block;"
+        document.getElementById('partialSdept').style="display:block;padding-left: 80%;"
         document.getElementById('studentDept').style="display:inline;border:2px Solid red;"
         document.getElementById('emptySdept').style="display:none;"
       } else {
@@ -343,7 +343,7 @@ function addStudent(){
       }
     }
     else {
-      document.getElementById('emptySdept').style="display:block;"
+      document.getElementById('emptySdept').style="display:block;padding-left: 80%;"
       document.getElementById('studentDept').style="display:inline;border:2px Solid red;"
       document.getElementById('partialSdept').style="display:none;"
     }
@@ -353,7 +353,7 @@ function addStudent(){
     var Scollage = document.getElementById('studentClg').value;
     if(Scollage) {
       if(Scollage.length <= 2){
-        document.getElementById('partialSclg').style="display:block;"
+        document.getElementById('partialSclg').style="display:block;padding-left: 80%;"
         document.getElementById('studentClg').style="display:inline;border:2px Solid red;"
         document.getElementById('emptySclg').style="display:none;"
       } else {
@@ -362,7 +362,7 @@ function addStudent(){
       }
     }
     else {
-      document.getElementById('emptySclg').style="display:block;"
+      document.getElementById('emptySclg').style="display:block;padding-left: 80%;"
       document.getElementById('studentClg').style="display:inline;border:2px Solid red;"
       document.getElementById('partialSclg').style="display:none;"
     }
